@@ -9,8 +9,8 @@ const userRoutes = require('./routes/userRoutes');
 const app = express();
 
 app.use(cors({
-    origin: 'http://localhost:5173', // Adjust this to your frontend's URL
-    credentials: true, // Allow cookies to be sent
+    origin: 'http://localhost:5173',
+    credentials: true,
 }));
 app.use(express.json());
 app.use(cookieParser());
